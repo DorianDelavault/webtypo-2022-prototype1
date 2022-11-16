@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Adamina&family=Blaka&family=Smythe&display=swap');
+
+
+body{
+    background-color: antiquewhite;
+    margin-left: 10em;
+}
+header{
+  position: fixed;
+  text-align: left;
+}
+h1{
+font-size: 3rem;
+text-align: left;
+font-family: Blaka;
+}
+
+hr {
+  border: none;
+  border-top: 3px double #333;
+  color: #333;
+  overflow: visible;
+  text-align: center;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-bottom: 0rem;
+  height: 10px;
+}
+
+hr:after {
+  background-color: antiquewhite;
+  content: '{{§}}';
+  padding: 10 10px;
+  position: relative;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  top: -12px;
+}
+h2{
+    text-align: center;
+    font-family: Smythe;
+    margin: 2rem;
+    font-size: 4rem;
+    }
+.Premier{
+  padding-top: 20rem;
+}
+h3{
+      text-align: center;
+      font-family: Blaka;
+      margin: 3rem;
+    }
+
+h4{
+  text-align: center;
+  font-family: Adamina;
+font-size: 2rem;
+}
+
+.red{
+  color: red;
+}
+p{
+  text-align: left;
+  font-family: Adamina;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-top: 5rem;
+  font-size: 1.3rem;
+  line-height: 160%;
+
+}
+ /* 
+p:first-letter {
+  float: left;
+  font-size: 60px;
+  line-height: 1;
+  font-weight: bold;
+  margin-right: 0,5rem;
+  font-style: bold;
+  font-family: Blaka;
+}
+*/
