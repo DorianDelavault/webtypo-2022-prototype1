@@ -21,6 +21,11 @@ font-family:Adamina;
 .lienhyper{
   padding: 5%;
 }
+.chapitre{
+  font-family:Adamina;
+  position: fixed;
+  display: flex;
+}
 h2{
     text-align: center;
     font-family: Smythe;
