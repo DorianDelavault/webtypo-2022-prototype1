@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Adamina&family=Blaka&family=Smythe&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Vollkorn:wght@800&display=swap');
 body{
     background-color: antiquewhite;
 }
@@ -8,7 +8,7 @@ body{
 .gauche{
   font-size: 140%;
 text-align: left;
-font-family:Adamina;
+font-family:Volkorn;
 position: fixed;
 display: none;
 padding-top: 5%;
@@ -16,19 +16,19 @@ padding-top: 5%;
 .droite{
   font-size: 2rem;
 text-align: center;
-font-family:Adamina;
+font-family:Volkorn;
 }
 .lienhyper{
   padding: 5%;
 }
 .chapitre{
-  font-family:Adamina;
+  font-family:Volkorn;
   position: fixed;
   display: flex;
 }
 h2{
     text-align: center;
-    font-family: Smythe;
+    font-family: Roboto;
     margin: 2rem;
     font-size: 4rem;
     }
@@ -52,7 +52,7 @@ h2{
           clear: both;}
 h3{
       text-align: center;
-      font-family: Adamina;
+      font-family: Volkorn;
       margin: 3rem;
     }
 
@@ -60,14 +60,14 @@ h3{
 
 h4{
   text-align: center;
-  font-family: Adamina;
+  font-family: Volkorn;
 font-size: 2rem;
 }
 
 
 p{
   text-align: left;
-  font-family: Adamina;
+  font-family: Volkorn;
   font-size: 1.3rem;
   line-height: 160%;
 
