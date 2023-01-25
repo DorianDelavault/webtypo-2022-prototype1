@@ -1,263 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Adamina&family=Blaka&family=Smythe&display=swap');
 
-body{
-    background-color: antiquewhite;
+/*.container {  display: grid;
+  grid-template-columns: 10% 90%;
+  grid-template-rows: 10% 90%;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "vide auteur"
+    "chapitre texte";*/ 
+.titre{
+  text-align: right;
+  padding-right: 1rem;
 }
 
 
-.gauche{
-  font-size: 140%;
-text-align: left;
-font-family:Adamina;
-position: fixed;
-display: none;
-padding-top: 5%;
-}
-.droite{
-  font-size: 2rem;
-text-align: center;
-font-family:Adamina;
-}
-.lienhyper{
-  padding: 5%;
-}
-.chapitre{
-  font-family:Adamina;
-  position: fixed;
-  display: flex;
-}
-h2{
-    text-align: center;
-    font-family: Smythe;
-    margin: 2rem;
-    font-size: 4rem;
+    .container {  display: grid;
+      grid-template-columns: 1fr 7fr;
+      grid-template-rows: 7fr;
+      grid-auto-columns: 1fr;
+      gap: 0px 0px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "chapitre texte";
     }
-* {
-      box-sizing: border-box;
+    
+    .texte { grid-area: texte; }
+    
+    .chapitre { grid-area: chapitre; 
+  padding-right: 1rem;
     }
-.column {
-      float: left;
-      padding-left: 5%;
-      padding-right: 5%;
-      padding-bottom: 5%; }
-      .left {
-        width: 10%;
-      }
-      
-      .right {
-        width: 90%;}
-.row:after {
-          content: "";
-          display: table;
-          clear: both;}
-h3{
-      text-align: center;
-      font-family: Adamina;
-      margin: 3rem;
-    }
-
-   
-
-h4{
-  text-align: center;
-  font-family: Adamina;
-font-size: 2rem;
-}
+    
 
 
-p{
-  text-align: left;
-  font-family: Adamina;
-  font-size: 1.3rem;
-  line-height: 160%;
-
-}
-/* 
-tablette
-*/
-@media screen and (min-width: 800px) and (max-width: 920px){
- body{
-  background-color: coral;
- }
-  .gauche{
-    font-size: 140%;
-  text-align: left;
-  font-family:Adamina;
-  position: fixed;
-  display: inherit;
-  writing-mode: vertical-rl;
-text-orientation: mixed;
-
-  }
-  .droite{
-    font-size: 3rem;
-  text-align: center;
-  font-family:Adamina;
-  }
-  hr {
-    border: none;
-    border-top: 3px double #333;
-    color: #333;
-    overflow: visible;
-    text-align: center;
-    margin-right: 10%;
-    margin-left: 10%;
-    margin-bottom: 0%;
-    height: 10px;
-  }
-  
-  hr:after {
-    background-color: antiquewhite;
-    content: '{{§}}';
-    padding: 10 10px;
-    position: relative;
-    margin-left: 10%;
-    margin-right: 10%;
-    top: -12px;
-  }
-  h2{
-      text-align: center;
-      font-family: Smythe;
-      margin: 2rem;
-      font-size: 4rem;
-      }
-  * {
-        box-sizing: border-box;
-      }
-  .column {
-        float: left;
-        padding-left: 5%;
-        padding-right: 5%;
-        padding-bottom: 5%; }
-        .left {
-          width: 10%;
-        }
-        
-        .right {
-          width: 90%;}
-  .row:after {
-            content: "";
-            display: table;
-            clear: both;}
-  h3{
-        text-align: center;
-        font-family: Adamina;
-        margin: 3rem;
-      }
-  
-   
-  h4{
-    text-align: center;
-    font-family: Adamina;
-  font-size: 2rem;
-  }
-  
-  
-  p{
-    text-align: justify;
-    font-family: Adamina;
-    font-size: 1.3rem;
-    line-height: 160%;
-  
-  }
-}
-/* 
-ordi
-*/
-@media screen and (min-width: 921px) {
-  body{
-    background-color: darkturquoise;
-  }
-  .gauche{
-    font-size: 140%;
-  text-align: left;
-  font-family:Adamina;
-  position: fixed;
-  display: inherit;
-  
 
 
-  }
-  .droite{
-    font-size: 4rem;
-  text-align: center;
-  font-family:Adamina;
-  }
-  hr {
-    border: none;
-    border-top: 3px double #333;
-    color: #333;
-    overflow: visible;
-    text-align: center;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 0%;
-    height: 10px;
-  }
-  
-  hr:after {
-    background-color: antiquewhite;
-    content: '{{§}}';
-    padding: 10 10px;
-    position: relative;
-    margin-left: 10%;
-    margin-right: 10%;
-    top: -12px;
-  }
-  h2{
-      text-align: center;
-      font-family: Smythe;
-      margin: 2rem;
-      font-size: 4rem;
-      }
-  * {
-        box-sizing: border-box;
-      }
-  .column {
-        float: left;
-        padding-left: 5%;
-        padding-right: 10%;
-        padding-bottom: 5%; }
-        .left {
-          width: 25%;
-        }
-        
-        .right {
-          width: 75%;}
-  .row:after {
-            content: "";
-            display: table;
-            clear: both;}
-  h3{
-        text-align: center;
-        font-family: Adamina;
-        margin: 3rem;
-      }
-  
-   
-  h4{
-    text-align: center;
-    font-family: Adamina;
-  font-size: 2rem;
-  }
-  
-  
-  p{
-    text-align: justify;
-    font-family: Adamina;
-    font-size: 1.3rem;
-    line-height: 160%;
-  
-  }
-}
- /* 
-p:first-letter {
-  float: left;
-  font-size: 60px;
-  line-height: 1;
-  font-weight: bold;
-  margin-right: 0,5rem;
-  font-style: bold;
-  font-family: Blaka;
-}
-*/
