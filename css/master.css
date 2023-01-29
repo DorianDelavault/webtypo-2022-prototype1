@@ -1,37 +1,100 @@
 @import url('https://fonts.googleapis.com/css2?family=Adamina&family=Blaka&family=Smythe&display=swap');
-
-/*.container {  display: grid;
-  grid-template-columns: 10% 90%;
-  grid-template-rows: 10% 90%;
-  grid-auto-columns: 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "vide auteur"
-    "chapitre texte";*/ 
-.titre{
-  text-align: right;
-  padding-right: 1rem;
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Cinzel:wght@400;700;900&display=swap');
+@font-face {
+  font-family: "Buffalow";
+  src: url(font/Buffalow-variable.ttf);
 }
+@import url(h.css);
+@import url(texte.css);
+@import url(animation.css);
 
 
+*{
+    list-style: none;
+  } 
+  .tetiere{
+    display: flex;
+    justify-content: space-between;
+    font-family: Cinzel;
+    font-size: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+  }
+  h1{
+    font-family: Cinzel;
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: center;
+  }
+  h2{
+    font-family: Cinzel;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  h3{
+    font-family: Cinzel;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+  }
     .container {  display: grid;
-      grid-template-columns: 1fr 7fr;
+      grid-template-columns: 1.1fr 7fr;
       grid-template-rows: 7fr;
-      grid-auto-columns: 1fr;
+      grid-auto-columns: 1.1fr;
       gap: 0px 0px;
       grid-auto-flow: row;
       grid-template-areas:
         "chapitre texte";
+        
     }
     
     .texte { grid-area: texte; }
-    
+
+        /* probleme le style s'apple aussi a celui du dessus
+        Rajouter une ligne sur layout pour aligner les chapitres au texte simplement */
     .chapitre { grid-area: chapitre; 
   padding-right: 1rem;
+  font-family: cinzel;
+  font-weight: 900;
+  font-size: 1rem;
+  padding-top: 2rem;
+  position: fixed;
     }
+    .sanspuce{
+      font-family: cinzel;
+      font-weight: 400;
+      font-size: 1rem; 
+    }
+
+   /* fonctionne pas*/
+   hr {
+      border: none;
+      border-top: 3px double rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
+      overflow: visible;
+      text-align: center;
+      height: 5px;
+      padding-bottom: 2rem;
+  }
+  
+  hr:after {
+    font-family: cinzel;
+    font-size: 2rem;
+      background: #fff;
+      content: '§';
+      padding: 0 4px;
+      position: relative;
+      top: -13px;
+  }
+  
+    .texte{
+      font-family: Baskervville;
+      font-size: 1.5rem;
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
+
+
+
     
-
-
-
-
