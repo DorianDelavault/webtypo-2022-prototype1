@@ -26,7 +26,7 @@
   @keyframes wacky{
     0% {font-variation-settings: 'cnde' 0; }
   100% {font-variation-settings: 'cnde' 100; }
-  }
+}
   
   .titre {
         animation:  wacky infinite;
