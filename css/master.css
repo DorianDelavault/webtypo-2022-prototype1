@@ -9,7 +9,15 @@
   src: url(font/Buffalow-variable.ttf);
 }
 
-
+body{
+--font-size-sm: clamp(0.67rem, 0.2vw + 0.62rem, 0.78rem);
+--font-size-base: clamp(0.88rem, 0.68vw + 0.7rem, 1.25rem);
+--font-size-md: clamp(1.14rem, 1.57vw + 0.75rem, 2rem);
+--font-size-lg: clamp(1.48rem, 3.13vw + 0.7rem, 3.2rem);
+--font-size-xl: clamp(1.92rem, 5.81vw + 0.47rem, 5.12rem);
+--font-size-xxl: clamp(2.5rem, 10.35vw + -0.09rem, 8.19rem);
+--font-size-xxxl: clamp(3.25rem, 17.92vw + -1.23rem, 13.11rem);
+}
 
 nav ul {
     list-style: none;
@@ -33,29 +41,12 @@ justify-self: center;
     display: flex;
     justify-content: space-between;
     font-family: Cinzel;
-    font-size: 2rem;
+    font-size: var(--font-size-md);
     padding-left: 2rem;
     padding-right: 2rem;
 
   }
-  h1{
-    font-family: Cinzel;
-    font-size: 2rem;
-    font-weight: 900;
-    text-align: center;
-  }
-  h2{
-    font-family: Cinzel;
-    font-size: 1.5rem;
-    text-align: center;
-  }
-  h3{
-    font-family: Cinzel;
-    font-size: 1.5rem;
-    font-weight: 400;
-    text-align: center;
-   text-decoration: underline;
-  }
+   
     .container {  display: grid;
       grid-template-columns: 1.1fr 7fr;
       grid-template-rows: 7fr;
@@ -69,14 +60,12 @@ justify-self: center;
     
     .texte { grid-area: texte; }
 
-        /* probleme le style s'apple aussi a celui du dessus
-        Rajouter une ligne sur layout pour aligner les chapitres au texte simplement */
     .chapitre
     { grid-area: chapitre; 
   padding-right: 1rem;
   font-family: cinzel;
   font-weight: 900;
-  font-size: 1rem;
+  font-size: var(--font-size-lg);
   padding-top: 2rem;
   position: fixed;
   text-decoration: none;
@@ -88,11 +77,10 @@ justify-self: center;
       font-size: 1rem; 
     }
 
-   /* fonctionne pas*/
    hr {
       border: none;
-      border-top: 3px double rgb(255, 255, 255);
-      color: rgb(0, 0, 0);
+      border-top: 0px  rgba(255, 255, 255, 0);
+      color: rgba(0, 0, 0, 0);
       overflow: visible;
       text-align: center;
       height: 5px;
@@ -102,7 +90,7 @@ justify-self: center;
   hr:after {
     font-family: cinzel;
     font-size: 2rem;
-      background: #fff;
+      background: #f5f5dc;
       content: '§';
       padding: 0 4px;
       position: relative;
@@ -111,12 +99,22 @@ justify-self: center;
   
     .texte{
       font-family: Baskervville;
-      font-size: 1.5rem;
+      font-size: var(--font-size-md);
       padding-left: 5rem;
       padding-right: 5rem;
     }
+
+    body{
+      background-color:#f5f5dc;
+    }
+    h1, h2, h3, p, .tetiere{
+      color: rgb(27, 27, 27);
+    }
     body.dark-theme{
-      background-color:rgb(27, 27, 27);
+      background-color: rgb(27, 27, 27);
+    }
+    h1.dark-theme, h2.dark-theme, h3.dark-theme, p.dark-theme, .tetiere.dark-theme{
+      color:#f5f5dc;
     }
   
  
@@ -128,12 +126,12 @@ justify-self: center;
         color: #f5f5dc;
       }
       body.light-theme{
-        background-color:rgb(255, 255, 255);
+        background-color:#f5f5dc;
       }
-      h1, h2, h3, p, .tetiere.light-theme{
-        color: #f5f5dc;
+      h1.light-theme, h2.light-theme, h3.light-theme, p.light-theme, .tetiere.light-theme{
+        color: rgb(27, 27, 27);
       }
-      
+     
 
 
       hr {
@@ -155,4 +153,35 @@ justify-self: center;
         position: relative;
         top: -13px;
     }
+    }
+    @media only screen and (min-width : 321px) {
+      .chapitre
+      { grid-area: chapitre; 
+    padding-right: 0.3rem;
+    font-family: cinzel;
+    font-weight: 900;
+    font-size: 1rem;
+    padding-top: 1rem;
+    position: fixed;
+    text-decoration: none;
+        }
+
+        .tetiere{
+          display: flex;
+          justify-content: space-between;
+          font-family: Cinzel;
+          font-size: var(--font-size-md);
+          padding-left: 1rem;
+          padding-right: 1rem;
+
+      }
+      .texte{
+        font-family: Baskervville;
+        font-size: var(--font-size-md);
+        padding-left: 4rem;
+        padding-right: 0.3rem;
+      }
+ .ul{
+  padding-left: 0.5em;
+ }
     }
