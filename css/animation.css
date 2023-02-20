@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Cinzel:wght@400;700;900&display=swap');
+@font-face {
+  font-family: "Buffalow";
+  src: url(font/Buffalow-variable.ttf);}
+
+  .titre{
+    width: 100%;
+    text-align:center;
+    padding-right: 1rem; 
+    font-family: "Buffalow";
+    font-size: 15vw;
+    /*font-variation-settings: 'cnde' 100;
+   transition: all 0.2s linear;*/
+  
+  }
+  /*.titre:hover{
+    width: 100%;
+    text-align:center;
+    padding-right: 1rem; 
+    font-family: "Buffalow";
+    font-size: 15vw;
+    font-variation-settings: 'cnde' 0;
+    transition: all 0.2s linear;
+  }*/
+  
+  @keyframes wacky{
+    0% {font-variation-settings: 'cnde' 0; }
+  100% {font-variation-settings: 'cnde' 100; }
+}
+  
+  .titre {
+        animation:  wacky infinite;
+      animation-duration: 6s;
+      animation-timing-function: ease-in-out;
+      margin: 0 auto;
+      line-height: 1;
+      font-weight: normal;
+      }
