@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Adamina&family=Blaka&family=Smythe&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Cinzel:wght@400;700;900&display=swap');
+@font-face {
+  font-family: "Buffalow";
+  src: url(font/Buffalow-variable.ttf);
+}
+
+
+
+.tetiere{
+    display: flex;
+    justify-content: space-between;
+    font-family: Cinzel;
+    font-size: var(--font-size-md);
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+  }
+
+  .tetiere2{
+    
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    font-family: Cinzel;
+    font-size: var(--font-size-md);
+    padding-left: 3rem;
+    padding-right: 2rem;
+    margin-top: 2rem;
+    position: absolute;
+    bottom: 1px;
+  }

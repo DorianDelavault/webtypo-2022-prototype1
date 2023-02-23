@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Adamina&family=Blaka&family=Smythe&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Cinzel:wght@400;700;900&display=swap');
+@font-face {
+  font-family: "Buffalow";
+  src: url(font/Buffalow-variable.ttf);
+}
+.sanspuce{
+    font-family: cinzel;
+    font-weight: 400;
+    font-size: var(--font-size-md);
+}
+nav ul {
+    list-style: none;
+ } 
+
+
+ nav a {
+  text-decoration: none;  
+ } 
+
+.chapitre
+{ grid-area: chapitre; 
+padding-right: 1rem;
+font-family: cinzel;
+font-weight: 900;
+font-size: var(--font-size-md);
+padding-top: 2rem;
+position: fixed;
+text-decoration: none;
+
+}

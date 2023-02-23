@@ -9,19 +9,7 @@
     padding-right: 1rem; 
     font-family: "Buffalow";
     font-size: 15vw;
-    /*font-variation-settings: 'cnde' 100;
-   transition: all 0.2s linear;*/
-  
   }
-  /*.titre:hover{
-    width: 100%;
-    text-align:center;
-    padding-right: 1rem; 
-    font-family: "Buffalow";
-    font-size: 15vw;
-    font-variation-settings: 'cnde' 0;
-    transition: all 0.2s linear;
-  }*/
   
   @keyframes wacky{
     0% {font-variation-settings: 'cnde' 0; }
@@ -36,3 +24,32 @@
       line-height: 1;
       font-weight: normal;
       }
+
+
+
+
+
+
+
+
+      .titreindex{
+        width: 100%;
+        text-align:center;
+        padding-right: 1rem; 
+        font-family: "Buffalow";
+        font-size: 15vw;
+      }
+      
+      @keyframes wacky{
+        0% {font-variation-settings: 'cnde' 0; }
+      100% {font-variation-settings: 'cnde' 100; }
+    }
+      
+      .titreindex {
+            animation:  wacky infinite;
+          animation-duration: 6s;
+          animation-timing-function: ease-in-out;
+          margin: 0 auto;
+          line-height: 1;
+          font-weight: normal;
+          }
