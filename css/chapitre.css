@@ -7,7 +7,7 @@
 .sanspuce{
     font-family: cinzel;
     font-weight: 400;
-    font-size: var(--font-size-md);
+    font-size: var(--font-size-base);
 }
 nav ul {
     list-style: none;
@@ -23,9 +23,14 @@ nav ul {
 padding-right: 1rem;
 font-family: cinzel;
 font-weight: 900;
-font-size: var(--font-size-md);
+font-size: var(--font-size-base);
 padding-top: 2rem;
 position: fixed;
 text-decoration: none;
+line-height: 1.5;
+}
 
+@media only screen and (max-width : 900px){
+ .chapitre{ line-height:2;
+}
 }
