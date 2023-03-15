@@ -1,6 +1,10 @@
 @import "titres.css";
 @import "texte.css";
 @import "animation.css";
+@import "navigation.css";
+@import "dark.css";
+@import "tetiere.css";
+@import "chapitre.css";
 
 @import url('https://fonts.googleapis.com/css2?family=Adamina&family=Blaka&family=Smythe&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Cinzel:wght@400;700;900&display=swap');
@@ -17,16 +21,39 @@ body{
 --font-size-xl: clamp(1.92rem, 5.81vw + 0.47rem, 5.12rem);
 --font-size-xxl: clamp(2.5rem, 10.35vw + -0.09rem, 8.19rem);
 --font-size-xxxl: clamp(3.25rem, 17.92vw + -1.23rem, 13.11rem);
+
+  --text-color: #252629;
+  --bkg-color: #fff9d4;
+}
+body.dark-theme {
+  --text-color: #fff9d4;
+  --bkg-color: #252629;
 }
 
-nav ul {
-    list-style: none;
- } 
+@media (prefers-color-scheme: dark) {
+  /* defaults to dark theme */
+  body {
+    --text-color: #fff9d4;
+    --bkg-color: #252629;
+  }
+  body.light-theme {
+    --text-color: #252629;
+    --bkg-color: #fff9d4;
+  }
+}
 
- nav a {
-  text-decoration: none;  
- } 
- 
+
+
+body {
+  background: var(--bkg-color);
+}
+
+h1,
+p, h2, h3, .tetiere {
+  color: var(--text-color);
+}
+
+
 
 header{
   display: flex;
@@ -37,15 +64,7 @@ header{
   .btn-toggle{
 justify-self: center;
   }
-  .tetiere{
-    display: flex;
-    justify-content: space-between;
-    font-family: Cinzel;
-    font-size: var(--font-size-md);
-    padding-left: 2rem;
-    padding-right: 2rem;
-
-  }
+  
    
     .container {  display: grid;
       grid-template-columns: 1.1fr 7fr;
@@ -60,107 +79,28 @@ justify-self: center;
     
     .texte { grid-area: texte; }
 
-    .chapitre
-    { grid-area: chapitre; 
-  padding-right: 1rem;
-  font-family: cinzel;
-  font-weight: 900;
-  font-size: var(--font-size-lg);
-  padding-top: 2rem;
-  position: fixed;
-  text-decoration: none;
+   
 
-    }
-    .sanspuce{
-      font-family: cinzel;
-      font-weight: 400;
-      font-size: 1rem; 
-    }
 
-   hr {
-      border: none;
-      border-top: 0px  rgba(255, 255, 255, 0);
-      color: rgba(0, 0, 0, 0);
-      overflow: visible;
-      text-align: center;
-      height: 5px;
-      padding-bottom: 2rem;
-  }
   
-  hr:after {
-    font-family: cinzel;
-    font-size: 2rem;
-      background: #f5f5dc;
-      content: '§';
-      padding: 0 4px;
-      position: relative;
-      top: -13px;
-  }
   
     .texte{
       font-family: Baskervville;
       font-size: var(--font-size-md);
-      padding-left: 5rem;
+      padding-left: 0rem;
       padding-right: 5rem;
     }
 
-    body{
-      background-color:#f5f5dc;
-    }
-    h1, h2, h3, p, .tetiere{
-      color: rgb(27, 27, 27);
-    }
-    body.dark-theme{
-      background-color: rgb(27, 27, 27);
-    }
-    h1.dark-theme, h2.dark-theme, h3.dark-theme, p.dark-theme, .tetiere.dark-theme{
-      color:#f5f5dc;
-    }
-  
- 
-    @media (prefers-color-scheme: dark) {
-      body{
-        background-color:rgb(27, 27, 27);
-      }
-      h1, h2, h3, p, .tetiere{
-        color: #f5f5dc;
-      }
-      body.light-theme{
-        background-color:#f5f5dc;
-      }
-      h1.light-theme, h2.light-theme, h3.light-theme, p.light-theme, .tetiere.light-theme{
-        color: rgb(27, 27, 27);
-      }
-     
-
-
-      hr {
-        border: none;
-        border-top: 3px double rgb(27, 27, 27);
-        color: #f5f5dc;
-        overflow: visible;
-        text-align: center;
-        height: 5px;
-        padding-bottom: 2rem;
-    }
+   
     
-    hr:after {
-      font-family: cinzel;
-      font-size: 2rem;
-        background: rgb(27, 27, 27);
-        content: '§';
-        padding: 0 4px;
-        position: relative;
-        top: -13px;
-    }
-    }
+
     @media only screen and (min-width : 321px) {
       .chapitre
       { grid-area: chapitre; 
     padding-right: 0.3rem;
     font-family: cinzel;
     font-weight: 900;
-    font-size: 1rem;
+    font-size: var(--font-size-xl);
     padding-top: 1rem;
     position: fixed;
     text-decoration: none;

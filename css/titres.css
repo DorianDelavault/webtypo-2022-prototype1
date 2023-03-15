@@ -24,6 +24,7 @@ h1{
   font-weight: 900;
   text-align: center;
 }
+
 h2{
   font-family: Cinzel;
   font-size: var(--font-size-md);
@@ -35,5 +36,9 @@ h3{
   font-weight: 400;
   text-align: center;
  text-decoration: underline;
-}
+text-align: center;}
 
+.Lire{
+  font-size: var(--font-size-lg);
+  text-align: center;
+}

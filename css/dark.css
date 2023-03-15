@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Adamina&family=Blaka&family=Smythe&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Cinzel:wght@400;700;900&display=swap');
+@font-face {
+  font-family: "Buffalow";
+  src: url(font/Buffalow-variable.ttf);
+}
+
+body{
+--font-size-sm: clamp(0.67rem, 0.2vw + 0.62rem, 0.78rem);
+--font-size-base: clamp(0.88rem, 0.68vw + 0.7rem, 1.25rem);
+--font-size-md: clamp(1.14rem, 1.57vw + 0.75rem, 2rem);
+--font-size-lg: clamp(1.48rem, 3.13vw + 0.7rem, 3.2rem);
+--font-size-xl: clamp(1.92rem, 5.81vw + 0.47rem, 5.12rem);
+--font-size-xxl: clamp(2.5rem, 10.35vw + -0.09rem, 8.19rem);
+--font-size-xxxl: clamp(3.25rem, 17.92vw + -1.23rem, 13.11rem);
+}
+
+
+
+body.dark-theme{
+    background-color: rgb(27, 27, 27);
+  }
+  h1.dark-theme, h2.dark-theme, h3.dark-theme, p.dark-theme, .tetiere.dark-theme{
+    color:#f5f5dc;
+  }
+
+
+  @media (prefers-color-scheme: dark) {
+    body{
+      background-color:rgb(27, 27, 27);
+    }
+    h1, h2, h3, p, .tetiere{
+      color: #f5f5dc;
+    }
+    body.light-theme{
+      background-color:#f5f5dc;
+    }
+    h1.light-theme, h2.light-theme, h3.light-theme, p.light-theme, .tetiere.light-theme{
+      color: rgb(27, 27, 27);
+    }
+   
+
+
+    hr {
+      border: none;
+      border-top: 3px double rgb(27, 27, 27);
+      color: #f5f5dc;
+      overflow: visible;
+      text-align: center;
+      height: 5px;
+      padding-bottom: 2rem;
+  }
+  
+  hr:after {
+    font-family: cinzel;
+    font-size: 2rem;
+      background: rgb(27, 27, 27);
+      content: '§';
+      padding: 0 4px;
+      position: relative;
+      top: -13px;
+  }
+  }
